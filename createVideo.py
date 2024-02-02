@@ -17,7 +17,7 @@ for file in listOfFiles:
 print(image)
 count = len(image)
 frame = cv2.imread(image[0])
-width,height,channels = frame.shape
+height,width,channels = frame.shape
 size = (width,height) 
 
 out = cv2.VideoWriter("project.avi",cv2.VideoWriter_fourcc(*'DIVX'),0.8,size)
